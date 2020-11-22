@@ -1,7 +1,10 @@
 # WorkManager
-通过节点的方式管理多个任务执行顺序
+### 通过节点的方式管理多个任务执行顺序
+
 使用方式：
+ 
  1，添加自动设置id的节点
+ ``` java
   mWorkManger = new WorkManger.Builder()
                 .addAutoIdNode(getFirstNode())
                 .addAutoIdNode(getSecondNode())
@@ -16,9 +19,10 @@
                 dialog.show();
             }
         });
-    }            
+    } 
+   ``` 
  2，添加自定义id的节点
- 
+  ``` java
    final static int FIRST_NODE_ID = 11;
    
    mWorkManger = new WorkManger.Builder()
@@ -35,4 +39,8 @@
                 dialog.show();
             }
         });
-    }         
+    }    
+  ``` 
+  
+  
+  
